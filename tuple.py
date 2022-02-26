@@ -7,7 +7,7 @@ contacts = [
 ]
 dic = dict(contacts)
 print(dic)
-name = 'roja'
+name = input()
 age=dic.get(name, 'Not found')
 if age != 'Not found':
     print(name+' is '+str(age))

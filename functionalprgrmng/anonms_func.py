@@ -22,3 +22,7 @@ print(result)
 nums = [11, 22, 33]
 a = list(map(lambda x: x*2, nums))
 print(a)
+
+nums = [11, 22, 33, 44, 55]
+res = list(filter(lambda x: x % 2 ==0, nums))
+print(res)

@@ -51,6 +51,8 @@ def make_word():
 print(list(make_word()))
 
 #decor function 
+"""it is a function that would change other 
+functions"""
 def decor(func):
 	def wrap():
 		print("==========")
@@ -66,6 +68,10 @@ decorated()
 
 #recursion- tavabe baazgashti
 #classic factorial x!
+""" in this case 1 is the base case result
+which acts as the exit condition of the recursion
+without it infinite function calls results 
+crashing the program"""
 
 def factorial(x):
 	if x==1:
@@ -73,3 +79,18 @@ def factorial(x):
 	else:
 		return x * factorial(x-1)
 print(factorial(5))
+
+# indirect recursion
+
+def is_even(x):
+	if x==0:
+		return True
+	else:
+		return is_odd(x-1)
+def is_odd(x):
+	return not is_even(x)
+print(is_odd(17))
+print(is_even(23))
+
+#fib func
+def fib

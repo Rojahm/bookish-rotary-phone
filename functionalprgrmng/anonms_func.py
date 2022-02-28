@@ -49,3 +49,16 @@ def make_word():
 		word += ch
 		yield word
 print(list(make_word()))
+
+#decor function 
+def decor(func):
+	def wrap():
+		print("==========")
+		func()
+		print("==========")
+	return wrap
+@decor
+def print_text():
+	print("Hello world!")
+decorated = decor(print_text)
+decorated()

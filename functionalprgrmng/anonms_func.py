@@ -65,6 +65,8 @@ decorated()
 
 
 #recursion- tavabe baazgashti
+#classic factorial x!
+
 def factorial(x):
 	if x==1:
 		return 1

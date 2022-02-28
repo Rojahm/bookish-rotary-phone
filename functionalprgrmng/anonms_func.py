@@ -26,3 +26,13 @@ print(a)
 nums = [11, 22, 33, 44, 55]
 res = list(filter(lambda x: x % 2 ==0, nums))
 print(res)
+
+#generators
+def countdown():
+	i = 5
+	while i>0:
+		yield i
+		i -= 1
+for i in countdown():
+	print (i)
+print(countdown())

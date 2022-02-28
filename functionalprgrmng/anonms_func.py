@@ -62,3 +62,12 @@ def print_text():
 	print("Hello world!")
 decorated = decor(print_text)
 decorated()
+
+
+#recursion- tavabe baazgashti
+def factorial(x):
+	if x==1:
+		return 1
+	else:
+		return x * factorial(x-1)
+print(factorial(5))

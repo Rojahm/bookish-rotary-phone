@@ -100,11 +100,18 @@ def fib(x):
 		return fib(x-1) +fib(x-2)
 print(fib(4))
 print("-------------")
-#*args
+#*args returns tuple
 def function2(named_arg, *args):
 	print(named_arg)
 	print(args)
 function2(1, 2, 3, 4, 5)
 print("-------------")
+# **kwargs(keyword args) returns dictionary
+def my_kwargfunc(x, y=7, *args, **kwargs):
+	print(kwargs)
+	print(args)
+my_kwargfunc(2, 3, 4, 5, 6, a=7, b=8)
+print("-------------")
+
 
 

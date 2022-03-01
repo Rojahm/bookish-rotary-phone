@@ -99,11 +99,12 @@ def fib(x):
 	else:
 		return fib(x-1) +fib(x-2)
 print(fib(4))
-
+print("-------------")
 #*args
-def function(named_arg, *args):
+def function2(named_arg, *args):
 	print(named_arg)
 	print(args)
-function(1, 2, 3, 4, 5)
+function2(1, 2, 3, 4, 5)
+print("-------------")
 
 

@@ -126,3 +126,17 @@ def power(x, y):
 		return x*power(x, y-1)
 print(power(2, 3))
 print("-------------")
+
+#spelling backwards func
+def spell(x):
+	i = len(x)
+	print(x[i-1])
+	if i == 1:
+		return x[0]
+	else:
+		x.pop()
+		return spell(x)
+
+
+txt=list("hello")
+print(spell(txt))

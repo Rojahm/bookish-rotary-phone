@@ -38,3 +38,45 @@ class Student:
 s1 = Student("Amy")
 s1.saHi()
 print("-----------")
+# inheritance and SUPERCLASSES and subclasses
+class Animal:
+	def __init__(self, name, color):
+		self.name=name
+		self.color=color
+
+class Cat(Animal):
+	def purr(self):
+		print("Purrr...")
+
+class Dog(Animal):
+	def Bark(self):
+		print("Woooof!")
+max = Dog("Max", "black")
+print(felix.color)
+felix = Cat("Felix", "ginger")
+felix.purr()
+print(felix.name)
+print("-----------")
+#subclass over ride superclass
+class Wolf:
+	def __init__(self, name, color):
+		self.name=name
+		self.color=color
+	def bark(self):
+		print("Grrrrrrrr...")
+class Dog(Wolf):
+	def bark(self):
+		print("woof")
+husky = Dog("max", "grey")
+husky.bark()
+# orride examples
+class A:
+	def spam(self):
+		print(1)
+class B(A):
+	def spam(self):
+		print(2)
+		super().spam()
+B().spam()
+A().spam()
+print("-----------")

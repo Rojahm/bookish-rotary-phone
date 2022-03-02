@@ -152,6 +152,7 @@ def spl(x):
 txt=list("hello")
 spl(txt)
 print("-------------")
+# same shit not recursive
 def splt(x):
 	i= len(x)
 	while i>0:
@@ -159,3 +160,4 @@ def splt(x):
 		i -=1
 txt=list("whatevar")
 splt(txt)
+print("-------------")

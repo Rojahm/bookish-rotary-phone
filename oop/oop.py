@@ -105,4 +105,13 @@ __xor__ for ^
 __or__ for |
 add different types==> RADD
 """
-
+# define a division operation
+class SpecialString:
+	def __init__(self, cont):
+		self.cont = cont
+	def __truediv__(self, other):
+		line = "=" *len(other.cont)
+		return "\n".join([self.cont, line, other.cont])
+spam = SpecialString("spam")
+hello = SpecialString("hello world!")
+print(spam / hello)

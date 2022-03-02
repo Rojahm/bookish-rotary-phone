@@ -113,5 +113,8 @@ def my_kwargfunc(x, y=0, *args, **kwargs):
 my_kwargfunc(2, 3, 4, 5, 6, a=7, b=8)
 print("-------------")
 
-
-
+nums= {1,2,3,4,5,6}
+nums={0,1,2,3}&nums
+nums=filter(lambda x: x>1, nums)
+print(len(list(nums)))
+print("-------------")

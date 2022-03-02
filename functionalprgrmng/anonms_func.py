@@ -107,7 +107,7 @@ def function2(named_arg, *args):
 function2(1, 2, 3, 4, 5)
 print("-------------")
 # **kwargs(keyword args) returns dictionary
-def my_kwargfunc(x, y=7, *args, **kwargs):
+def my_kwargfunc(x, y=0, *args, **kwargs):
 	print(kwargs)
 	print(args)
 my_kwargfunc(2, 3, 4, 5, 6, a=7, b=8)

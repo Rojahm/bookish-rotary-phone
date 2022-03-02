@@ -80,7 +80,7 @@ class B(A):
 B().spam()
 A().spam()
 print("-----------")
-# Magic Methods/ dunders like __init__
+# Magic Methods/ dunders like __init__(for creating instace)
 # double underscore at end and beginnig
 class Vector2D:
 	def __init__(self, x, y):
@@ -93,3 +93,16 @@ second = Vector2D(3, 9)
 result= first + second
 print(result.x)
 print(result.y)
+""" MAGIC METHODS:
+__sub__ for -
+__mul__ for *
+__truediv__ for /
+__floordiv__ for //
+__mod__ for %
+__pow__ for **
+__and__ for &
+__xor__ for ^
+__or__ for |
+add different types==> RADD
+"""
+

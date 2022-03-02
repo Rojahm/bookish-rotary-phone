@@ -140,3 +140,22 @@ def spell(x):
 
 txt=list("hello")
 print(spell(txt))
+print("-------------")
+def spl(x):
+	i = len(x)
+	if i == 1:
+		print(x[0])
+	else:
+		print(x[i-1])
+		x.pop()
+		return spl(x)
+txt=list("hello")
+spl(txt)
+print("-------------")
+def splt(x):
+	i= len(x)
+	while i>0:
+		print(x[i-1])
+		i -=1
+txt=list("whatevar")
+splt(txt)

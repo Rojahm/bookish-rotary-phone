@@ -80,8 +80,13 @@ class B(A):
 B().spam()
 A().spam()
 print("-----------")
-# Magic Methods/ dunders like __init__(for creating instace)
-# double underscore at end and beginnig
+""" operators(like + that is used by every method and
+function)
+Magic Methods/ dunders like __init__(for creating instace)
+double underscore at end and beginnig
+this enables to re define functions by user(operator
+overloading )"""
+
 class Vector2D:
 	def __init__(self, x, y):
 		self.x = x
@@ -112,6 +117,21 @@ class SpecialString:
 	def __truediv__(self, other):
 		line = "=" *len(other.cont)
 		return "\n".join([self.cont, line, other.cont])
+
 spam = SpecialString("spam")
 hello = SpecialString("hello world!")
 print(spam / hello)
+
+#magic methods for comparisons
+class SpecialString:
+	def __init__(self, cont):
+		self.cont = cont
+
+	def __gt__(self, other):
+		for index in range(len(other.cont)+1):
+			result = other.cont[:index] ">" + self.count
+			result += ">" + other.cont[index:]
+			print(result)
+spam = SpecialString("spam")			
+eggs = SpecialString("eggs")
+spam > eggs

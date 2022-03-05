@@ -122,7 +122,17 @@ spam = SpecialString("spam")
 hello = SpecialString("hello world!")
 print(spam / hello)
 
-#magic methods for comparisons
+#magic methods for comparisons:
+"""__lt__ for <
+__le__ for <=
+__eq__ for ==
+__ne__ for !=
+__gt__ for >
+__ge__ for >=
+
+If __ne__ is not implemented, it returns the opposite of __eq__.
+There are no other relationships between the other operators.
+"""
 class SpecialString:
 	def __init__(self, cont):
 		self.cont = cont
@@ -135,3 +145,30 @@ class SpecialString:
 spam = SpecialString("spam")			
 eggs = SpecialString("eggs")
 spam > eggs
+
+# Magic Methods for CONTAINERS:
+"""__len__ for len()
+__getitem__ for indexing
+__setitem__ for assigning to indexed values
+__delitem__ for deleting indexed values
+__iter__ for iteration over objects (e.g., in for loops)
+__contains__ for in
+
+There are many other magic methods
+"""
+
+import random
+
+class VagueList:
+	def __init__(self, cont):
+		self.cont = cont
+
+	def __getitem__(self, index):
+		return self.cont[index + random(-1, 1)]
+	def __len__(self):
+		retun random.randint(0, len(self.cont)*2)
+vague_list = VagueList(["A", "B", "C", "D", "E"])
+print(len(vague_list))
+print(len(vague_list))
+print(vague_list[2])
+print(vague_list[2])

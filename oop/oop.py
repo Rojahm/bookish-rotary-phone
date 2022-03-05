@@ -129,7 +129,7 @@ class SpecialString:
 
 	def __gt__(self, other):
 		for index in range(len(other.cont)+1):
-			result = other.cont[:index] ">" + self.count
+			result = other.cont[:index] + ">" + self.cont
 			result += ">" + other.cont[index:]
 			print(result)
 spam = SpecialString("spam")			

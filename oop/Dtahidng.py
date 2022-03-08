@@ -12,6 +12,7 @@ class Queue:
 	def pop(self):
 		return self._hiddenlist.pop(-1)
 	def __repr__(self):
+# {} would be replaced by format function
 		return "Queue({})".format(self._hiddenlist)
 queue = Queue([1, 2, 3])
 print(queue)
@@ -20,3 +21,11 @@ print(queue)
 queue.pop()
 print(queue)
 print(queue._hiddenlist)
+queue._hiddenlist.pop()
+queue._hiddenlist.insert(0, 5)
+print(queue)
+queue._hiddenlist.insert(3, 2)
+print(queue)
+
+
+

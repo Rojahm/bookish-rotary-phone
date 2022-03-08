@@ -27,5 +27,14 @@ print(queue)
 queue._hiddenlist.insert(3, 2)
 print(queue)
 
+# strongly private methods and attribs have double underscore
+class Spam:
+	__egg = 7
+	def print_egg(self):
+		print(self.__egg)
+s = Spam()
+s.print_egg()
+print(s._Spam__egg)
+# this line will cause err: print(s.__egg)
 
 

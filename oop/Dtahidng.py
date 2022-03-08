@@ -1,4 +1,4 @@
-# Data Hiding
+# Data Hiding/ Encapsulation
 """ in other programming languages we use private methodes
 to hide details of a class.
 but in python we are all consenting adults and we use denoting"""

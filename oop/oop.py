@@ -2,7 +2,8 @@
 """ it describes what obj will be
 classes are seperate from the objs
 classes are objcs blurprint
-we can use a class to make multiple objcs"""
+we can use a class to make multiple objcs
+data and function = attribute and method"""
 
 class Cat:
 #these are called class methods(which are funcs)

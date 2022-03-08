@@ -174,3 +174,10 @@ print(len(vague_list))
 print(len(vague_list))
 print(vague_list[2])
 print(vague_list[0])
+
+# +++/// exersices \\\+++
+# classes and instances
+# attributes and methods = data and functions
+
+class Employee:
+	pass

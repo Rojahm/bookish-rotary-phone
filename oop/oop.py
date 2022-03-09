@@ -192,6 +192,7 @@ emp_2 = Employee()
 each of these is a unique(with diffrent address) instance of the Employee class
 difference between instance variables and class variable
 +instance variable: contains data that is unique to each instance
+
 manual instances variable:
 
 emp_1.first = "corey"
@@ -209,4 +210,17 @@ so we use (self):
     	self.pay = pay
     	self.email = first + "." + last + "@company.com"
 emp_1 = Employee('name', 'last', 5000)
-+class variable: first, last pay email are attributes of our Employee class
+ 
+ if we want to add some actions:
+ 	1-manually
+print('{} {}'.format(emp_1.first, emp_2.last))
+
+ 	2- add method to the our class
+ 	def fullname(self):
+ 		return '{} {}'.format(self.first, self.last)
+print(emp_1.fullname())
++ we need parentheses because its a method not an attribute
+
+first, last pay email are attributes of our Employee class
+
+ +class variable:

@@ -221,6 +221,20 @@ print('{} {}'.format(emp_1.first, emp_2.last))
 print(emp_1.fullname())
 + we need parentheses because its a method not an attribute
 
++forgetting (self) argument in a method definition:
+ err 
+ instance will pass to a method as an argument automatically
+ if we forget to write it in the defenition of the method
+ an err will show that the method X 
+ should have 0 arguments but 1 was given(1 being the instance)
+
+    def fullname():
+    	return '{} {}'.format(self.first, self.last)
+
+  print(emp_1.fullname()) ===> err
+
+emp_1.fullname() == Employee.fullname(emp_1)
+
 first, last pay email are attributes of our Employee class
 
  +class variable:

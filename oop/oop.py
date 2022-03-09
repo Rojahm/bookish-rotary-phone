@@ -185,18 +185,28 @@ class Employee:
 """different between class and an instance of a class,
 +class = blueprint for creating instances
 +instances = every(employee) that we make is an instace of that class
+
 emp_1 = Employee()
 emp_2 = Employee()
+
 each of these is a unique(with diffrent address) instance of the Employee class
 difference between instance variables and class variable
 +instance variable: contains data that is unique to each instance
 manual instances variable:
+
 emp_1.first = "corey"
 emp_1.last = "whatever"
 emp_1.email ="whatever@company.com"
+
 __init__ method is used to creat an automatic way to create instances
 with their variables in a class
-first argument that __init__ get has to be the instance it self
-so we use (self)
+first argument that __init__ get has to be the instance itself
+so we use (self):
 
-+class variable: 
+    def __init__(self, first, last, pay):
+    	self.first = first
+    	self.last = last
+    	self.pay = pay
+    	self.email = first + "." + last + "@company.com"
+emp_1 = Employee('name', 'last', 5000)
++class variable: first, last pay email are attributes of our Employee class

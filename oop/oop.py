@@ -191,6 +191,7 @@ emp_2 = Employee()
 
 each of these is a unique(with diffrent address) instance of the Employee class
 difference between instance variables and class variable
+
 +instance variable: contains data that is unique to each instance
 
 manual instances variable:

@@ -239,3 +239,16 @@ emp_1.fullname() == Employee.fullname(emp_1)
 first, last pay email are attributes of our Employee class
 
  +class variable:
+ is the same for every instances of that class
+
+"""
+class Employee:
+	def __init__(self, first, last, pay):
+		self.first = first
+		self.last = last
+		self.pay = pay
+		self.email = first + "." + last + "@company.com"
+	def fullname(self):
+		return "{} {}".format(self.first, self.last)
+
+emp_1 = Employee('corey', 'Schafer', 50000)

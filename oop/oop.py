@@ -262,3 +262,8 @@ class Employee:
 
 emp_1 = Employee('corey', 'Schafer', 50000)
 print(emp_1.__dict__)
+emp_1.rais_amount = 0.5
+print(emp_1.__dict__)
+print(Employee.emp_count)
+print(emp_1.emp_count)
+print(Employee.__dict__)

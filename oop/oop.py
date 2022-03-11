@@ -267,3 +267,8 @@ print(emp_1.__dict__)
 print(Employee.emp_count)
 print(emp_1.emp_count)
 print(Employee.__dict__)
+
+""" regular methods, class methods, static methods
+regular methods, automatically takes instance as
+an argument
+class method

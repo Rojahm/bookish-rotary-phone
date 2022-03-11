@@ -243,12 +243,21 @@ first, last pay email are attributes of our Employee class
 
 """
 class Employee:
+	rais_amount = 1.04
+	emp_count = 0
 	def __init__(self, first, last, pay):
 		self.first = first
 		self.last = last
 		self.pay = pay
 		self.email = first + "." + last + "@company.com"
+
+		Employee.emp_count += 1
+
 	def fullname(self):
 		return "{} {}".format(self.first, self.last)
+
+	def Raise(self, rais_amount):
+		return self.pay = int(self.pay * self.rais_amount)
+
 
 emp_1 = Employee('corey', 'Schafer', 50000)

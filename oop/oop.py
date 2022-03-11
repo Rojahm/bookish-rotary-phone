@@ -256,8 +256,9 @@ class Employee:
 	def fullname(self):
 		return "{} {}".format(self.first, self.last)
 
-	def Raise(self, rais_amount):
-		return self.pay = int(self.pay * self.rais_amount)
+	def Raise(self):
+		self.pay = int(self.pay * self.rais_amount)
 
 
 emp_1 = Employee('corey', 'Schafer', 50000)
+print(emp_1.__dict__)

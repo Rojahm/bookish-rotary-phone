@@ -258,7 +258,9 @@ class Employee:
 
 	def Raise(self):
 		self.pay = int(self.pay * self.rais_amount)
-
+	@classmethod
+	def set_raise_amt(cls, amount):
+		pass
 
 emp_1 = Employee('corey', 'Schafer', 50000)
 print(emp_1.__dict__)
@@ -280,9 +282,13 @@ class Rectangle:
 #regular method:
 	def claculate_area(self):
 		return self.width * self.height
+
 #Class Method : 
-		@classmethod
-		def new_square(cls, side_length):
-			return cls(side_length, side_length)
+	@classmethod
+	def new_square(cls, side_length):
+		return cls(side_length, side_length)
 newreq = Rectangle(5, 6)
 print(newreq.claculate_area())
+square = Rectangle.new_square(5)
+print(square.claculate_area())
+

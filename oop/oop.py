@@ -284,5 +284,5 @@ class Rectangle:
 		@classmethod
 		def new_square(cls, side_length):
 			return cls(side_length, side_length)
-Rectangle(5, 5)
-print(Rectangle.__dict__)
+newreq = Rectangle(5, 6)
+print(newreq.claculate_area())

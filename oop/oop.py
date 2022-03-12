@@ -271,4 +271,18 @@ print(Employee.__dict__)
 """ regular methods, class methods, static methods
 regular methods, automatically takes instance as
 an argument
-class method
+class method : """
+
+class Rectangle:
+	def __init__(self, width, height):
+		self.width = width
+		self.height = height
+#regular method:
+	def claculate_area(self):
+		return self.width * self.height
+#Class Method : 
+		@classmethod
+		def new_square(cls, side_length):
+			return cls(side_length, side_length)
+Rectangle(5, 5)
+print(Rectangle.__dict__)

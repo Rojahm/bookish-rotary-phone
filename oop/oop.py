@@ -296,4 +296,15 @@ print(newreq.claculate_area())
 square = Rectangle.new_square(5)
 print(square.claculate_area())
 
+# static Methods: behave like plain functions except for the fact that 
+# you can call them from an instance of the class
+
+class Pizza:
+	def __init__(self, topping):
+		self.topping = topping
+
+	@staticmethod
+	
+
+
 

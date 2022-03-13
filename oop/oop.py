@@ -270,6 +270,9 @@ print(Employee.emp_count)
 print(emp_1.emp_count)
 print(emp_1.rais_amount)
 print(Employee.rais_amount)
+Employee.set_raise_amt(3)
+print(Employee.rais_amount)
+
 
 """ regular methods, class methods, static methods
 regular methods, automatically takes instance as
@@ -292,4 +295,5 @@ newreq = Rectangle(5, 6)
 print(newreq.claculate_area())
 square = Rectangle.new_square(5)
 print(square.claculate_area())
+
 

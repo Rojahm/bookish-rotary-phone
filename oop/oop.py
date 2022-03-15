@@ -309,9 +309,11 @@ class Pizza:
 			raise ValueError("No pineapples!")
 		else:
 			return True
+
 ingredients = ["cheese", "onions", "spam"]
 if all(Pizza.validate_topping(i) for i in ingredients):
 	pizza = Pizza(ingredients)
+print(Pizza.__dict__)
 
 
 

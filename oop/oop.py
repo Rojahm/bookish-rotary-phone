@@ -309,15 +309,20 @@ class Pizza:
 			raise ValueError("No pineapples!")
 		else:
 			return True
-   @property
-   def pineapple_allowed(self):
-   	return False
    
 ingredients = ["cheese", "onions", "spam"]
 if all(Pizza.validate_topping(i) for i in ingredients):
 	pizza = Pizza(ingredients)
-pizza2 = Pizza(["cheese", "tomato"])
-print(pizza.pineapple_allowed)
-pizza.pineapple_allowed = True
 
+class Person:
+	def __init__(self, age):
+		self.age = int(age)
+	@property
+	def isAdult(self):
+		if self.age > 18:
+			return True
+		else:
+			return False
+			
+	
 

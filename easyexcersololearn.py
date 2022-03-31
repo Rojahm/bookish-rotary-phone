@@ -1,3 +1,5 @@
+#sololearn easy exercises 
+
 # Extra-Terrestrials
 
 word = "hello"
@@ -12,4 +14,4 @@ num = 26
 apples = num / 2
 print(int(apples // 3))
 
-# The Spy Life
+# Cheer Creator

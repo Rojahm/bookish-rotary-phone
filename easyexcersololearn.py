@@ -57,3 +57,17 @@ elif criminals >= 5 and criminals < 10:
 	print('Help me Batman')
 else:
 	print('Good Luck out there!')
+
+# Jungle Camping
+noise = input()
+for i in noise:
+	if noise[i] == 'Grr':
+		return 'Lion'
+	elif noise[i] == 'Rawr':
+		return 'Tiger'
+	elif noise[i] == 'Ssss':
+		return 'Snake'
+	elif noise[i] == 'Chirp':
+		return ' Bird'
+	else:
+		return 'No Animal'

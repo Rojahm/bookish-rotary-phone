@@ -30,3 +30,12 @@ if int(score/12) >= gun:
 	print("But it!")
 else:
 	print("Try again")
+
+#Paint costs
+other = 40
+color = 5
+count = int(input())
+import math
+cost = (5 * count) + 40
+tax = cost * 0.1
+print(math.ceil(cost + tax))

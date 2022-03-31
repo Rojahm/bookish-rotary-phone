@@ -22,3 +22,11 @@ elif 0 <= yards and 10 >= yards:
 	print('shh')
 else:
 	print('Ra!' * yards)
+
+# Skee-Ball
+score = int(input())
+gun = int(input())
+if int(score/12) >= gun:
+	print("But it!")
+else:
+	print("Try again")

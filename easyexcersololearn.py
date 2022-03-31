@@ -39,3 +39,12 @@ import math
 cost = (5 * count) + 40
 tax = cost * 0.1
 print(math.ceil(cost + tax))
+
+# Argentina
+pesos = int(input())
+dollars = int(input())
+
+if pesos * 0.02 < dollars:
+	print("Pesos")
+else:
+	print("Dollars")
